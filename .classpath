@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="D:/tomcat7-8080-eclipse/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="E:/project/j2ee/WEB/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
 	<classpathentry kind="lib" path="E:/project/j2ee/WEB/WEB-INF/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="E:/project/j2ee/WEB/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="output" path="WEB/WEB-INF/classes"/>
 </classpath>
