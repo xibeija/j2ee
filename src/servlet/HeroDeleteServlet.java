@@ -1,24 +1,21 @@
 package servlet;
 
-import java.io.IOException;
+import dao.HeroDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import dao.HeroDAO;
+import java.io.IOException;
 
 public class HeroDeleteServlet extends HttpServlet {
 
-	protected void service(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        new HeroDAO().delete(id);
 
-		int id = Integer.parseInt(request.getParameter("id"));
+        response.sendRedirect("listHero");
 
-		new HeroDAO().delete(id);
-
-		response.sendRedirect("/listHero");
-
-	}
+    }
 }
